@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+.header, .headerText, .container, .box, .boxText {
+  border:1px dashed #000;
+}
+
+
+.headerText, .header{
+  padding: 0 2% 2% 2%;
+}
+
+.header {
+  font-size: 2vw;
+}
+
+.headerText {
+  font-size: 1.5vw;
+}
+
+.box {
+  width: 33%;
+  float: left;
+  text-align: center;
+}
+
+.box img {
+  object-fit: cover;
+  width: 20vw;
+  height: 20vw;
+  margin: auto;
+}
+
+.box p {
+  text-align: left;
+  padding: 5%;
+}
+
+.box h3 {
+  margin: 5px;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .box {
+    width: 100%;
+    float: none;
+    text-align: left;
+    margin-bottom: 2%;
+  }
+
+  .box img {
+    width: 30%;
+    float: left;
+  }
+
+  .boxText {
+    float: left;
+    width: 55%;
+    height: 20vw;
+    margin-left: 5%;
+  }
+
+  .boxText p {
+    padding: 0;
+  }
+
+  .box:nth-of-type(2) img {
+    float: right;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+}
+
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
